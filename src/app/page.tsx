@@ -1,10 +1,7 @@
-import AddData from "@/components/addData/AddData";
-import GetData from "@/components/getData-from-db/Getdata";
+import FormData from "@/components/FormData";
+
 export default function Home() {
-  return (
-    <>
-      <AddData />
-      <GetData />
-    </>
-  );
+  return <>
+  <FormData/>
+  </>;
 }
