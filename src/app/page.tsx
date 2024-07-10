@@ -7,11 +7,12 @@ import { UserButton } from "@clerk/nextjs";
 import { useRouter } from "next/navigation";
 export default function Home() {
   const { signOut } = useClerk();
+  // in useUser user exists in {user}
   const { isSignedIn, user, isLoaded } = useUser();
   const Navigate = useRouter();
   return (
     <>
-      {/* User can manage account info like email,name,password */}
+      {/* User can manage account info like email,name,password through btn */}
 
       {/* @ts-ignore */}
 
