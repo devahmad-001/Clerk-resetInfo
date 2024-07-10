@@ -4,8 +4,9 @@ import {
 } from '@clerk/nextjs/server';
 // if user not logged in it will redirect to the signin page 
 const isProtectedRoute = createRouteMatcher([
-  // routes that will not approach without signin defined here  
+  // routes that will not approach without signin defined here 
   '/products(.*)',
+  
 ]);
 
 export default clerkMiddleware((auth, req) => {
